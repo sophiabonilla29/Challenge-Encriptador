@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.2.css">
+    <script src="script2.2.js" type="text/javascript" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="titulo">ENCRIPTADOR</h1>
+            <img class="logo"  src="imagenes/Vector.png" alt="">
+        </nav>
+    </header>
+        <section class="principal">
+            
+            <div class="encriptador">
+                
+                <textarea id="textIn" name="" class="textIn" cols="60" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            
+                <p class="info">&#9432; Solo letras minúsculas y sin acentos.</p>
+                
+                <input id="btnEncriptar" class="btnEncriptar" type="submit" id="btnEncriptar"  value="Encriptar">    
+
+                <input id="btnDesencriptar"  class="btnDesencriptar" type="submit" id="btnDesencriptar"  value="Desencriptar"> 
+            </div>
+                <div id="desencriptar" class="desencriptar">
+                
+                    <img class="munieco" src="imagenes/Muñeco.png" alt="">
+
+                    <div  class="info2">
+                   
+                    <h2 class="texto">Ningún mensaje fue encontrado </h2>
+                    <p class="texto1">Ingrese el texto que desea encriptar o desencriptar.</p>
+                    </div>
+                
+            </div>
+
+            <div id="desencriptar2"  hidden class="desencriptar2">
+
+                <div  class="info2">
+                    <textarea id="textOut" name="textOut" class="textOut" cols="30" rows="10" ></textarea>
+                    <input id="btnCopiar" class="btnCopiar" type="submit" id="btnCopiar"  value="copiar">  
+                </div>
+                
+            </div>
+
+        </section>
+  
+</body>
+</html>

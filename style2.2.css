@@ -1,0 +1,282 @@
+body {
+    height: 1024px;
+    width: 1440px;
+    position: relative;
+    background: #85e4ad;
+}
+
+.titulo{
+    position: absolute;
+    top: 40px;
+    left: 240px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    /* or 29px */
+
+text-align: center;
+
+/* Gray/gray-500 */
+
+color: #01060b;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+.textIn {
+box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 80%),inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.5);
+border: none;
+position: absolute;
+width: 640px;
+height: 240px;
+left: 200px;
+top: 168px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+
+}
+
+.info{
+position:absolute;
+top: 851px;
+left: 264px;
+
+width: 205px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 100;
+font-size: 12px;
+line-height: 50%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #01060c;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.btnEncriptar, .btnDesencriptar, .btnCopiar{
+    /* Auto layout */
+
+/*display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;*/
+
+width: 328px;
+height: 67px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+text-align: center;
+transition: 1s all;
+cursor: pointer;
+
+
+/* Dark blue/dark-blue-300 */
+
+
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.btnEncriptar{
+background: #07722c;
+position: absolute;
+left: 240px;
+top: 885px;
+/* White */
+color: #f1e5e5;
+}
+
+.btnEncriptar:hover {
+background: rgb(18, 43, 25);
+transform: scale(1.1);
+}
+
+.btnDesencriptar{
+    /* Button */
+position: absolute;
+left: 592px;
+top: 885px;
+color: #eff6f2;
+box-sizing: border-box;
+background: #07722c;
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0d0f11;
+}
+.btnDesencriptar:hover {
+background: rgb(9, 199, 66);
+transform: scale(1.1);
+}
+
+.btnCopiar{
+position: absolute;
+left: 10px;
+bottom: -210px;
+color: #0A3871;
+box-sizing: border-box;
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0A3871;
+}
+
+.btnCopiar:hover {
+background: rgb(9, 199, 66);
+transform: scale(1.1);
+}
+
+.desencriptar, .desencriptar2 {
+    position: relative;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* shadow */
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px; 
+}
+
+.munieco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 243px;
+}
+
+.info2{
+    /* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 336px;
+height: 122px;
+left: 32px;
+top: 579px;
+
+}
+
+
+.texto, .texto1 {
+width: 336px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+text-align: center;
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.texto{
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+
+color: #343A40;
+order: 0;
+}
+.texto1{
+
+font-weight: 400;
+font-size: 30px;
+line-height: 150%;
+
+color: #495057;
+order: 1;
+
+}
+
+.textOut{
+box-shadow: 10px 10px 35px 0px rgb(0 0 0 / 55%),inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.5);
+border: none;
+position: absolute;
+width: 336px;
+height: 781px;
+left: 0px;
+top: -555px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+/* or 36px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+}
+
+@media screen and (max-width:960px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    body{
+        width: 100%;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos, .contacto {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
